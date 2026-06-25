@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  background-color: whitesmoke;
+}
+
+.layout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(156, 181, 234);
+}
+
+.features {
+ background-color: white;
+}
+
+.navbar {
+    background-color: white;
+}
+
+.navbar-brand img {
+  height: 50px;
+  width: auto;
+}
+
+.jumbotron {
+  background-color: rgb(225, 236, 249);
+}
+
+.features {
+  background-color: white;
+}
+
+.footer {
+  background-color: #0d6efd;
+}
