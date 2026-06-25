@@ -35,9 +35,9 @@ export const Home = () => {
 	}, [])
 
 	return (
-		<div className="container home">
+		<>
 			<Jumbotron />
 			<Features />
-		</div>
-	);
+		</>
+	)
 }; 
