@@ -4,18 +4,20 @@ body {
 }
 
 .layout {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(156, 181, 234);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .features {
- background-color: white;
+  background-color: white;
 }
 
 .navbar {
-    background-color: white;
+  height: 10vh;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  color: #021138;
 }
 
 .navbar-brand img {
@@ -23,14 +25,71 @@ body {
   width: auto;
 }
 
+.nav-link {
+  color: #021138;
+}
+
+.btn-login {
+  background-color: white;
+  color: #021138;
+  border: 1px solid #0d6efd;
+}
+
+.btn-login:hover {
+  background-color: #0d6efd;
+  color: white;
+  border: 1px solid #0d6efd;
+}
+
 .jumbotron {
-  background-color: rgb(225, 236, 249);
+  display: flex;
+  height: 40vh;
+  background-color: rgb(194, 207, 246);
+  /*margin: 0;
+  padding: 0;
+  align-items: stretch;*/
+}
+
+@media (max-width: 768px) {
+  .jumbotron {
+    flex-direction: column-reverse;
+    height: auto;
+    margin: 0;
+  padding: 0;
+  }
+}
+
+.jumbotron-content {
+  padding: 3rem;
+}
+
+.jumbotron-image img {
+  height: 100%;
+  width: 100%;
+  /*object-fit: cover;*/
+  object-fit: contain;
 }
 
 .features {
   background-color: white;
+  display: flex;
+  /*height: 50vh;*/
+}
+
+
+.card-img-top {
+  object-fit: cover;
+  height: 200px;
+  width: auto;
 }
 
 .footer {
+  margin-top: auto;
   background-color: #0d6efd;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+  color: white;
 }

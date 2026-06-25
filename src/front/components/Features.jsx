@@ -10,7 +10,7 @@ export const Features = () => {
 	];
   return (
     <div className = "Container features">
-      <div className = "row g-4 p-3">{
+      <div className = "row g-4 p-3 features-row">{
 		cardImages.map((img,index) => {
 			return (
 				<div className="col-lg-3 col-md-6 col-12">
