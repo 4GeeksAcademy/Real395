@@ -2,9 +2,11 @@ import React, { useEffect } from "react"
 import useGlobalReducer from "../hooks/useGlobalReducer.jsx";
 import { Jumbotron } from "../components/Jumbotron.jsx";
 import { Features } from "../components/Features.jsx";
+import { FeatureShowcase } from "../components/FeatureShowcase.jsx";
 import { useNavigate } from "react-router-dom";
 
 import imageHome1 from "../assets/img/sistema-real360.png";
+import imageHome2 from "../assets/img/img-services-1.png";
 import beneficio1 from "../assets/img/b1-gestion-eficiente.png";
 import beneficio2 from "../assets/img/b2-morosidad-controlada.png";
 import beneficio3 from "../assets/img/b3-cuidamos-tu-propiedad.png";
@@ -56,6 +58,13 @@ export const Home = () => {
 				buttonLink="/contact"
 			/>
 			<Features cards={featuresCards} />
+			<FeatureShowcase
+				title="Administracón que genera valor"
+				subtitle="Conoce los beneficiso de nuestra administración:"
+				image={imageHome2}
+				buttonText="Conoce nuestros servicios"
+				buttonLink="/services"
+			/>
 		</>
 	)
 }; 
