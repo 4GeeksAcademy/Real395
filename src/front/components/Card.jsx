@@ -9,7 +9,7 @@ export const Card = (props) => {
                     <h5 className="card-title">{props.title}</h5>
                     <p className="card-text">{props.subtitle}</p>
                     <hr />
-                    <Link to="/contact" className="btn btn-primary"> Más Información </Link>
+                    <Link to={props.buttonLink} className="btn btn-primary"> {props.buttonText} </Link>
                 </div>
             </div>
         </div>

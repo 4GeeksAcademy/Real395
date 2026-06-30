@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import React from "react";
+import "../css/Login.css"
 import loginFondo from "../assets/img/login-fondo-3.png";
 
 export const Login = () => {
