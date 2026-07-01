@@ -2,8 +2,7 @@
 
 .featureShowcase {
   display: flex;
-  height: 100vh;
-  background-color: #c2d0e9;
+  background-color: white;
   margin: 0;
   padding: 0;
 }

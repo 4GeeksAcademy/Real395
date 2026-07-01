@@ -11,6 +11,7 @@ import beneficio1 from "../assets/img/b1-gestion-eficiente.png";
 import beneficio2 from "../assets/img/b2-morosidad-controlada.png";
 import beneficio3 from "../assets/img/b3-cuidamos-tu-propiedad.png";
 import beneficio4 from "../assets/img/b4-comunicacion-constante.jpg";
+import { ServicesHero } from "../components/ServicesHero.jsx";
 
 export const Home = () => {
 
@@ -51,20 +52,21 @@ export const Home = () => {
 	return (
 		<>
 			<Jumbotron
-				title="Simplifica la gestión de tu edificio"
-				subtitle="Gestiona tus pagos, reportes, comunicados, votaciones y reservas desde una sola plataforma digital diseñada para administradores y residentes."
+				title="Administra tu Edificio con Real360"
+				subtitle="La plataforma tecnológica diseñada para administradores y residentes, que automatiza y centraliza la administración de tu edificio, permitiéndote dedicar más tiempo a la toma de decisiones y lograr una gestión eficiente y transparente."
 				image={imageHome1}
 				buttonText="Solicita tu demo"
 				buttonLink="/contact"
 			/>
-			<Features cards={featuresCards} />
-			<FeatureShowcase
-				title="Administracón que genera valor"
-				subtitle="Conoce los beneficiso de nuestra administración:"
-				image={imageHome2}
+			<ServicesHero />
+			{/*<FeatureShowcase
+				title="Servicio de Administración de Edificios"
+				subtitle="Nos encargamos de la administración de tu edificio para que tú te enfoques en lo que realmente importa: tu comunidad y tu bienestar."
 				buttonText="Conoce nuestros servicios"
 				buttonLink="/services"
-			/>
+			/>*/}
+			<Features cards={featuresCards} />
+
 		</>
 	)
 }; 

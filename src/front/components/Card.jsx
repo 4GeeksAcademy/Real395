@@ -8,8 +8,8 @@ export const Card = (props) => {
                 <div className="card-body">
                     <h5 className="card-title">{props.title}</h5>
                     <p className="card-text">{props.subtitle}</p>
-                    <hr />
-                    <Link to={props.buttonLink} className="btn btn-primary"> {props.buttonText} </Link>
+                    {/*<hr />
+                    <Link to={props.buttonLink} className="btn btn-primary"> {props.buttonText} </Link>*/}
                 </div>
             </div>
         </div>

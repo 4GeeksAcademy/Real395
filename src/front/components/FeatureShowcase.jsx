@@ -13,8 +13,7 @@ export const FeatureShowcase = ({ title, subtitle, image, buttonText, buttonLink
         </NavLink>
       </div>
       <div className="featureShowcase-image">
-        <img src={image} alt={title} />
       </div>
     </div>
-  )
-}
+  );
+};
