@@ -1,53 +1,77 @@
+import React from "react";
+import { Card } from "./Card";
 import "../css/ServicesHero.css";
 
-export const ServicesHero = () => {
+export const ServicesHero = ({ cards }) => {
     return (
-        <section className="services-hero container py-5">
+        <div className="container services-hero">
             <div className="row align-items-center">
-                {/* Columna izquierda */}
                 <div className="col-lg-6">
-                    <span className="section-tag">
-                        ADMINISTRACIÓN PROFESIONAL DE EDIFICIOS
-                    </span>
-                    <h2 className="mt-3">
-                        Administración que genera valor
+                    <span className="hero-subtitle"> SERVICIO DE ADMINISTRACIÓN DE EDIFICIOS</span>
+                    <h2 className="hero-title">
+                        Administración <span className="hero-title-highlight">que genera valor</span>
                     </h2>
-                    <div className="blue-line my-3"></div>
-                    <p className="services-description"> Nos encargamos de la administración de tu edificio para que tú te enfoques en lo que realmente importa: tu comunidad y tu bienestar. </p>
-                    <button className="btn btn-primary mt-4">
-                        Conoce nuestros servicios
-                    </button>
+                    <div className="hero-blueline"></div>
+                    <p className="hero-description"> Nos encargamos de la administración de tu edificio para que tú te enfoques en lo que realmente importa: <span className="hero-description-highlight">tu comunidad y tu bienestar.</span>  </p>   
                 </div>
-                {/* Columna derecha */}
-                <div className="col-lg-6 mt-5 mt-lg-0">
-                    <div className="row g-4">
-                        <div className="col-6">
-                            <div className="benefit">
+                <div className="col-lg-6">
+                    <div className="row hero-benefits">
+                        <div className="col-3 benefit-item border-end">
+                            <div className="benefit-icon">
                                 <i className="fa-solid fa-chart-line"></i>
-                                <h6>Mayor eficiencia operativa</h6>
                             </div>
+                            <h6 className="benefit-title">
+                                Eficiencia operativa
+                            </h6>
                         </div>
-                        <div className="col-6">
-                            <div className="benefit">
-                                <i className="fa-solid fa-coins"></i>
-                                <h6>Optimización de recursos</h6>
+                        <div className="col-3 benefit-item border-end">
+                            <div className="benefit-icon">
+                                <i className="fa-solid fa-circle-dollar-to-slot"></i>
                             </div>
+                            <h6 className="benefit-title">
+                                Optimización de recursos
+                            </h6>
                         </div>
-                        <div className="col-6">
-                            <div className="benefit">
-                                <i className="fa-solid fa-lightbulb"></i>
-                                <h6>Mejores decisiones</h6>
+                        <div className="col-3 benefit-item border-end">
+                            <div className="benefit-icon">
+                                <i className="fa-solid fa-comments"></i>
                             </div>
+                            <h6 className="benefit-title">
+                                Mejores decisiones
+                            </h6>
                         </div>
-                        <div className="col-6">
-                            <div className="benefit">
+                        <div className="col-3 benefit-item">
+                            <div className="benefit-icon">
                                 <i className="fa-solid fa-shield-halved"></i>
-                                <h6>Transparencia</h6>
                             </div>
+                            <h6 className="benefit-title">
+                                Transparencia y Confianza
+                            </h6>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+            <div className="row g-4 p-3 hero-cards">{
+                cards.map((img, index) => {
+                    return (
+                        <div className="col-lg-3 col-md-6 col-12">
+                            <Card key={index} url={img.url} title={img.title} subtitle={img.subtitle} buttonText={img.buttonText} buttonLink={img.buttonLink}  />
+                        </div>
+                    );
+                })}
+            </div>
+            <div className="row">
+                <div className="col-12 text-center d-flex justify-content-center gap-3">
+                    <button className="btn btn-primary">
+                        Explorar servicios
+                    {/*    <i className="fa-solid fa-arrow-right ms-2"></i>*/}
+                    </button>
+                    <button className="btn btn-primary">
+                        Solicitar cotización
+                    {/*    <i className="fa-solid fa-arrow-right ms-2"></i>*/}
+                    </button>
+                </div>
+            </div>
+        </div>
     );
 };

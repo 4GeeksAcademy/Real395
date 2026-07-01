@@ -1,26 +1,26 @@
 import React, { useEffect } from "react"
 import useGlobalReducer from "../hooks/useGlobalReducer.jsx";
 import { Jumbotron } from "../components/Jumbotron.jsx";
+import { ServicesHero } from "../components/ServicesHero.jsx";
 import { Features } from "../components/Features.jsx";
 import { FeatureShowcase } from "../components/FeatureShowcase.jsx";
 import { useNavigate } from "react-router-dom";
 
 import imageHome1 from "../assets/img/sistema-real360.png";
 import imageHome2 from "../assets/img/img-services-1.png";
-import beneficio1 from "../assets/img/b1-gestion-eficiente.png";
-import beneficio2 from "../assets/img/b2-morosidad-controlada.png";
-import beneficio3 from "../assets/img/b3-cuidamos-tu-propiedad.png";
-import beneficio4 from "../assets/img/b4-comunicacion-constante.jpg";
-import { ServicesHero } from "../components/ServicesHero.jsx";
+import serviceHero1 from "../assets/img/b1-gestion-eficiente.png";
+import serviceHero2 from "../assets/img/contratacion-personal-1.png";
+import serviceHero3 from "../assets/img/b3-cuidamos-tu-propiedad.png";
+import serviceHero4 from "../assets/img/b4-comunicacion-constante.jpg";
 
 export const Home = () => {
 
 	const { store, dispatch } = useGlobalReducer();
-	const featuresCards = [
-		{ url: beneficio1, title: "Gestión Transparente", subtitle: "Gestionamos de manera eficiente tus cuotas, ingresos y gastos, con reportes claros y transparentes para una mejor toma de decisiones.", buttonText:"Conoce nuestros servicios",buttonLink:"/services" },
-		{ url: beneficio2, title: "Control de morosidad", subtitle: "Contribuimos a reducir la morosidad del edificio implementando alertas oportunas y un seguimiento preciso de los pagos pendientes.", buttonText:"Conoce nuestros servicios",buttonLink:"/services" },
-		{ url: beneficio3, title: "Cuidado de tu Propiedad", subtitle: "Realizamos los mantenimientos oportunos y aseguramos que tu propiedad siempre esté limpia, operativa y presentable.", buttonText:"Conoce nuestros servicios",buttonLink:"/services" },
-		{ url: beneficio4, title: "Comunicación Oportuna", subtitle: "Mantenemos a todos los residentes informados y siempre comunicados con avisos claros, oportunos y constantes.", buttonText:"Conoce nuestros servicios",buttonLink:"/services" }
+	const servicesCards = [
+		{ url: serviceHero1, title: "Gestión Financiera", subtitle: "Gestionamos de forma eficiente tus cuotas, ingresos y gastos con reportes claros y transparentes.", buttonText:"Conoce nuestros servicios",buttonLink:"/services" },
+		{ url: serviceHero2, title: "Gestión del Personal", subtitle: "Contamos con personal capacitado y orientado al servicio asegurando el bienestar del edificio.", buttonText:"Conoce nuestros servicios",buttonLink:"/services" },
+		{ url: serviceHero3, title: "Mantenimientos", subtitle: "Realizamos los mantenimientos para que tu propiedad siempre esté en óptimas condiciones.", buttonText:"Conoce nuestros servicios",buttonLink:"/services" },
+		{ url: serviceHero4, title: "Comunicados", subtitle: "Mantenemos informados a los residentes con avisos claros y oportunos.", buttonText:"Conoce nuestros servicios",buttonLink:"/services" }
 	];
 
 	const loadMessage = async () => {
@@ -58,14 +58,14 @@ export const Home = () => {
 				buttonText="Solicita tu demo"
 				buttonLink="/contact"
 			/>
-			<ServicesHero />
+			<ServicesHero cards={servicesCards} />
 			{/*<FeatureShowcase
 				title="Servicio de Administración de Edificios"
 				subtitle="Nos encargamos de la administración de tu edificio para que tú te enfoques en lo que realmente importa: tu comunidad y tu bienestar."
 				buttonText="Conoce nuestros servicios"
 				buttonLink="/services"
-			/>*/}
-			<Features cards={featuresCards} />
+			/>
+			<Features cards={featuresCards} />*/}
 
 		</>
 	)
