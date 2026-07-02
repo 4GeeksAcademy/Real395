@@ -1,11 +1,12 @@
 import React from "react";
 import { Card } from "./Card";
+import { NavLink } from "react-router-dom";
 import "../css/ServicesHero.css";
 
 export const ServicesHero = ({ cards }) => {
     return (
         <div className="container services-hero">
-            <div className="row align-items-center">
+            <div className="row align-items-center hero-content">
                 <div className="col-lg-6">
                     <span className="hero-subtitle"> SERVICIO DE ADMINISTRACIÓN DE EDIFICIOS</span>
                     <h2 className="hero-title">
@@ -60,16 +61,20 @@ export const ServicesHero = ({ cards }) => {
                     );
                 })}
             </div>
-            <div className="row">
+            <div className="row g-4 p-3">
                 <div className="col-12 text-center d-flex justify-content-center gap-3">
-                    <button className="btn btn-primary">
-                        Explorar servicios
-                    {/*    <i className="fa-solid fa-arrow-right ms-2"></i>*/}
-                    </button>
-                    <button className="btn btn-primary">
+                    <NavLink to="/services">
+                        <button className="btn btn-primary">
+                            Explorar servicios
+                        {/*    <i className="fa-solid fa-arrow-right ms-2"></i>*/}
+                        </button>
+                    </NavLink>
+                    <NavLink to="/contact">
+                        <button className="btn btn-primary">
                         Solicitar cotización
-                    {/*    <i className="fa-solid fa-arrow-right ms-2"></i>*/}
-                    </button>
+                        {/*    <i className="fa-solid fa-arrow-right ms-2"></i>*/}
+                        </button>
+                    </NavLink>
                 </div>
             </div>
         </div>

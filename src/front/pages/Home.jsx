@@ -2,8 +2,6 @@ import React, { useEffect } from "react"
 import useGlobalReducer from "../hooks/useGlobalReducer.jsx";
 import { Jumbotron } from "../components/Jumbotron.jsx";
 import { ServicesHero } from "../components/ServicesHero.jsx";
-import { Features } from "../components/Features.jsx";
-import { FeatureShowcase } from "../components/FeatureShowcase.jsx";
 import { useNavigate } from "react-router-dom";
 
 import imageHome1 from "../assets/img/sistema-real360.png";
@@ -52,21 +50,14 @@ export const Home = () => {
 	return (
 		<>
 			<Jumbotron
-				title="Administra tu Edificio con Real360"
-				subtitle="La plataforma tecnológica diseñada para administradores y residentes, que automatiza y centraliza la administración de tu edificio, permitiéndote dedicar más tiempo a la toma de decisiones y lograr una gestión eficiente y transparente."
+				title="Tecnología que simplifica la administración"
+				subtitle = "Tecnología para administrar edificios"
+				description = "Plataforma tecnológica diseñada para administradores y residentes, que automatiza y centraliza la administración de tu edificio, permitiéndote dedicar más tiempo a la toma de decisiones y lograr una gestión eficiente y transparente."
 				image={imageHome1}
 				buttonText="Solicita tu demo"
 				buttonLink="/contact"
 			/>
 			<ServicesHero cards={servicesCards} />
-			{/*<FeatureShowcase
-				title="Servicio de Administración de Edificios"
-				subtitle="Nos encargamos de la administración de tu edificio para que tú te enfoques en lo que realmente importa: tu comunidad y tu bienestar."
-				buttonText="Conoce nuestros servicios"
-				buttonLink="/services"
-			/>
-			<Features cards={featuresCards} />*/}
-
 		</>
 	)
 }; 
