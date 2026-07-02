@@ -1,5 +1,5 @@
 import { useState } from "react"
-import useGloalReducer from "../hooks/useGlobalReducer";
+import useGlobalReducer from "../hooks/useGlobalReducer";
 import { Link, useNavigate } from "react-router-dom";
 
 
@@ -7,7 +7,7 @@ import loginFondo from "../assets/img/login-fondo-3.png";
 import "../css/Login.css"
 
 export const Login = () => {
-    const { dispatch } = useGloalReducer();
+    const { dispatch } = useGlobalReducer();
     const navigate = useNavigate();
 
     const [user, setUser] = useState({
@@ -26,19 +26,21 @@ export const Login = () => {
 
         const backendUrl = import.meta.env.VITE_BACKEND_URL
 
-        const response = await fetch(backendUrl + "/api/login", fetchOptions);
+        const response = await fetch(backendUrl + "api/login", fetchOptions);
         const data = await response.json();
         console.log(data.access_token, data.user);
 
         localStorage.setItem("token", data.access_token);
 
-        dispatch({
+        if (response.ok) {
+            dispatch({
             type: "set_user",
             payload: data.user,
-        });
+            });
 
-        if (response.ok) {
-            navigate("/dashboard");
+            localStorage.setItem("user", JSON.stringify(data.user));
+
+            navigate("/portal/dashboard");
         }
     }
 
