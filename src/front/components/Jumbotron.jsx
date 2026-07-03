@@ -8,6 +8,7 @@ export const Jumbotron = ({ title, subtitle, description, image, buttonText, but
       <div className="jumbotron-content">
         {/*<span className="jumbotron-subtitle"> {subtitle}</span>*/}
         <h2 className="jumbotron-title"> {title}</h2>
+        <div className="hero-blueline"></div>
         <p className="jumbotron-description">{description}</p>
         <NavLink to={buttonLink} className="btn btn-primary">
           {buttonText}

@@ -3,7 +3,7 @@ import useGloalReducer from "../hooks/useGlobalReducer";
 import { Link, useNavigate } from "react-router-dom";
 
 
-import loginFondo from "../assets/img/login-fondo-3.png";
+import loginFondo from "../assets/img/inicio-sesion.png";
 import "../css/SignUp.css"
 
 export const SignUp = () => {

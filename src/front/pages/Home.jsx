@@ -52,7 +52,7 @@ export const Home = () => {
 			<Jumbotron
 				title="Tecnología que simplifica la administración"
 				subtitle = "Tecnología para administrar edificios"
-				description = "Plataforma tecnológica diseñada para administradores y residentes, que automatiza y centraliza la administración de tu edificio, permitiéndote dedicar más tiempo a la toma de decisiones y lograr una gestión eficiente y transparente."
+				description = "Software diseñado para administradores y residentes que automatiza la gestión diaria del edificio, centraliza la información y reduce errores brindando mayor visibilidad y control sobre cada proceso."
 				image={imageHome1}
 				buttonText="Solicita tu demo"
 				buttonLink="/contact"

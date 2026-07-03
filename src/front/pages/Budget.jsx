@@ -1,7 +1,6 @@
 import { useState } from "react"
 import useGlobalReducer from "../hooks/useGlobalReducer";
 import { Link, useNavigate } from "react-router-dom";
-import { BudgetTable } from "../components/BudgetTable";
 import "../css/Budget.css"
 
 export const Budget = () => {
@@ -15,8 +14,8 @@ export const Budget = () => {
     { id: id++, group: "GASTOS ADMINISTRATIVOS", category: "Administración", subcategory: "Personal de vigilancia - descansero", quantity: "", base: "", total: 0 },
     { id: id++, group: "GASTOS ADMINISTRATIVOS", category: "Administración", subcategory: "Personal de vigilancia - vacaciones", quantity: "", base: "", total: 0 },
 
-    { id: id++, group: "SERVICIOS PÚBLICOS", category: "Luz-consumo de áreas comunes", subcategory: "Luz servicios generales", quantity: "", base: "", total: 0 },
-    { id: id++, group: "SERVICIOS PÚBLICOS", category: "Luz-consumo de áreas comunes", subcategory: "Luz bomba contraincendio", quantity: "", base: "", total: 0 },
+    { id: id++, group: "SERVICIOS PÚBLICOS", category: "Luz - consumo de áreas comunes", subcategory: "Luz - servicios generales", quantity: "", base: "", total: 0 },
+    { id: id++, group: "SERVICIOS PÚBLICOS", category: "Luz - consumo de áreas comunes", subcategory: "Luz - bomba contraincendio", quantity: "", base: "", total: 0 },
     { id: id++, group: "SERVICIOS PÚBLICOS", category: "Agua - Consumo individual y de áreas comunes", subcategory: "Agua", quantity: "", base: "", total: 0 },
 
     { id: id++, group: "GASTOS VARIOS", category: "Gastos varios", subcategory: "Productos de limpieza", quantity: "", base: "", total: 0 },
@@ -108,7 +107,6 @@ export const Budget = () => {
       <div className="alert alert-primary fw-bold">
         Total General: S/ {grandTotal.toFixed(2)}
       </div>
-      {/* BOTÓN FINAL */}
       <button
         className="btn btn-primary w-100"
         onClick={handleSubmit}

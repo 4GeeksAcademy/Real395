@@ -1,9 +1,10 @@
 .row-signup {
-  min-height: 86vh;
+  min-height: 87vh;
   margin: 0;
   padding: 0;
   display: flex;
-  background: #E7EEF7;
+  /*background: #E7EEF7;*/
+  background: #E3EDFD;
 }
 
 .signup-form{
@@ -20,7 +21,7 @@
 }
 
 .col-signup-img {
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     /*background-position:bottom;
