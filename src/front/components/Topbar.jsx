@@ -15,7 +15,7 @@ export const Topbar = ({ toggleSidebar }) => {
     };
 
     return (
-        <div className="d-flex justify-content-between align-items-center p-2 bg-light border">
+        <div className="d-flex justify-content-between align-items-center p-2 bg-light"  style={{ height: "7vh" }}>
             <div>
                 <button type="button" className="btn btn-light" onClick={toggleSidebar}><i className="fa-solid fa-bars"></i></button>
             </div>

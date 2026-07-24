@@ -7,7 +7,7 @@ import loginFondo from "../assets/img/login-fondo-3.png";
 import "../css/Login.css"
 
 export const Login = () => {
-    const { dispatch } = useGlobalReducer();
+    const { store, dispatch } = useGlobalReducer()
     const navigate = useNavigate();
 
     const [user, setUser] = useState({

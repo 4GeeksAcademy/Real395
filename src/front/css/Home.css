@@ -1,3 +1,69 @@
+/* SECCION DE JUMBOTRON */
+
+.jumbotron {
+  display: flex;
+  height: 40vh;
+  /*background-color: #c2d0e9;*/
+  /*background-color: #e7f1ff;*/
+  background-color: #e3edfd;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 992px) {
+  .jumbotron {
+    flex-direction: column-reverse;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .jumbotron-image img {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 768px) {
+  .jumbotron {
+    flex-direction: column-reverse;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .jumbotron-image img {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+.jumbotron-content {
+  padding: 3rem;
+}
+
+.jumbotron-image img {
+  height: 100%;
+  object-fit: contain;
+}
+
+.jumbotron-title {
+  margin-top: 1rem;
+}
+
+.jumbotron-subtitle {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #6c757d;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* SECCION DE SERVICES HERO */
+
 .services-hero {
   background: white;
   margin: 0;
@@ -7,8 +73,8 @@
 .hero-content {
   padding: 3rem;
   padding-bottom: 0;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  /*margin-top: 20px;
+  margin-bottom: 20px;*/
 }
 
 .hero-subtitle {

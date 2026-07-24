@@ -2,13 +2,14 @@
 import {
   createBrowserRouter,
   createRoutesFromElements,
-  Route, Navigate,
+  Route, 
+  Navigate,
 } from "react-router-dom";
 
+/*import { Layout } from "./pages/Layout";*/
 import { PublicLayout } from "./pages/PublicLayout";
 import { PrivateLayout } from "./pages/PrivateLayout";
 
-/*import { Layout } from "./pages/Layout";*/
 import { Home } from "./pages/Home";
 {/*import { Single } from "./pages/Single";*/ }
 import { About } from "./pages/About";

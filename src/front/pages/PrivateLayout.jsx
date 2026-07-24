@@ -25,7 +25,7 @@ export const PrivateLayout = () => {
                 <div className="d-flex justify-content-start">
                     <Sidebar isOpen={sideBarOpen}/>
                 </div>
-                <div className="w-100">
+                <div className="w-100 h-100 bg-white">
                     <Topbar toggleSidebar={toggleSidebar}/>
                     <Outlet /> 
                 </div>

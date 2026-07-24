@@ -14,9 +14,9 @@ export const Budget = () => {
     { id: id++, group: "GASTOS ADMINISTRATIVOS", category: "Administración", subcategory: "Personal de vigilancia - descansero", quantity: "", base: "", total: 0 },
     { id: id++, group: "GASTOS ADMINISTRATIVOS", category: "Administración", subcategory: "Personal de vigilancia - vacaciones", quantity: "", base: "", total: 0 },
 
-    { id: id++, group: "SERVICIOS PÚBLICOS", category: "Luz - consumo de áreas comunes", subcategory: "Luz - servicios generales", quantity: "", base: "", total: 0 },
-    { id: id++, group: "SERVICIOS PÚBLICOS", category: "Luz - consumo de áreas comunes", subcategory: "Luz - bomba contraincendio", quantity: "", base: "", total: 0 },
-    { id: id++, group: "SERVICIOS PÚBLICOS", category: "Agua - Consumo individual y de áreas comunes", subcategory: "Agua", quantity: "", base: "", total: 0 },
+    { id: id++, group: "SERVICIOS PÚBLICOS", category: "Electricidad", subcategory: "Servicios generales", quantity: "", base: "", total: 0 },
+    { id: id++, group: "SERVICIOS PÚBLICOS", category: "Electricidad", subcategory: "Bomba contraincendio", quantity: "", base: "", total: 0 },
+    { id: id++, group: "SERVICIOS PÚBLICOS", category: "Agua", subcategory: "Consumo individual y de áreas comunes", quantity: "", base: "", total: 0 },
 
     { id: id++, group: "GASTOS VARIOS", category: "Gastos varios", subcategory: "Productos de limpieza", quantity: "", base: "", total: 0 },
     { id: id++, group: "GASTOS VARIOS", category: "Gastos varios", subcategory: "Productos de oficina", quantity: "", base: "", total: 0 },
@@ -28,6 +28,11 @@ export const Budget = () => {
   ];
 
   const [budget, setBudget] = useState(initialData);
+  const [month, setMonth] = useState("");
+  const [year, setYear] = useState(new Date().getFullYear());
+
+  const months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+  const years = [2026, 2027, 2028];
 
   const handleChange = (index, field, value) => {
     setBudget((prev) => {
@@ -45,16 +50,59 @@ export const Budget = () => {
       return updated;
     });
   };
+
   const grandTotal = budget.reduce(
     (sum, item) => sum + (item.total || 0),
     0
   );
+
   const handleSubmit = () => {
-    console.log("Presupuesto:", budget);
+    if (!month) {
+      alert("Selecciona el mes del presupuesto");
+      return;
+    }
+
+    console.log({
+      month,
+      year,
+      budget,
+      grandTotal,
+    });
+
     alert("Presupuesto registrado");
   };
+
   return (
-    <div className="container py-4">
+    <div className="container py-3 budget-container">
+      <div className="container budget-header">
+        <h3 className="text-primary fw-bold mb-3">
+          Registro de Presupuesto
+        </h3>
+
+        <div className="row mb-3">
+          <div className="col-2 d-flex align-items-center gap-3">
+            <label className="mb-0 fw-semibold"> Año</label>
+            <select className="form-select form-select-sm" value={year} onChange={(e) => setYear(e.target.value)} >
+              <option value="">Selecciona un año</option>
+              {years.map((item) => (
+                <option key={item} value={item}>
+                  {item}
+                </option>))}
+            </select>
+          </div>
+
+          <div className="col-3 d-flex align-items-center gap-3">
+            <label className="mb-0 fw-semibold">Mes</label>
+            <select className="form-select form-select-sm" value={month} onChange={(e) => setMonth(e.target.value)} >
+              <option value="">Selecciona un mes</option>
+              {months.map((item) => (
+                <option key={item} value={item}>
+                  {item}
+                </option>))}
+            </select>
+          </div>
+        </div>
+      </div>
       <div className="budget-table-container">
         <table className="table table-bordered align-middle">
           <thead className="table-light">
@@ -104,7 +152,7 @@ export const Budget = () => {
         </table>
       </div>
       {/* TOTAL GENERAL */}
-      <div className="alert alert-primary fw-bold">
+      <div className="alert alert-primary fw-bold py-1 px-3 mb-2 rounded-top-0">
         Total General: S/ {grandTotal.toFixed(2)}
       </div>
       <button

@@ -1,17 +1,18 @@
-import { Outlet } from "react-router-dom/dist"
+/*import { Outlet } from "react-router-dom/dist"*/
+import { Outlet } from "react-router-dom";
 import ScrollToTop from "../components/ScrollToTop"
 import { Navbar } from "../components/Navbar"
 import { Footer } from "../components/Footer"
 import "../css/Navbar.css";
 import "../css/Footer.css";
 
-// Base component that maintains the navbar and footer throughout the page and the scroll to top functionality.
+// Layout for all public pages. It includes the Navbar, Footer and ScrollToTop behavior.
 export const PublicLayout = () => {
     return (
         <ScrollToTop>
-            <div className="container layout">
+            <div className="container layout-public">
                 <Navbar />
-                    <Outlet />                
+                <Outlet />
                 <Footer />
             </div>
         </ScrollToTop>

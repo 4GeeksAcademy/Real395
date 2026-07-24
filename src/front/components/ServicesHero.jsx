@@ -1,7 +1,7 @@
 import React from "react";
 import { Card } from "./Card";
 import { NavLink } from "react-router-dom";
-import "../css/ServicesHero.css";
+/*import "../css/ServicesHero.css";*/
 
 export const ServicesHero = ({ cards }) => {
     return (

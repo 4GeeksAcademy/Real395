@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import "../css/Jumbotron.css";
+/*import "../css/Jumbotron.css";*/
 
 export const Jumbotron = ({ title, subtitle, description, image, buttonText, buttonLink }) => {
 
