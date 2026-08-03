@@ -1,10 +1,53 @@
-import { Link } from "react-router-dom";
-import React from "react";
+import PhoneInput from "react-phone-number-input";
+import "../css/Contact.css"
 
 export const Contact = () => {
-    return ( 
-        <div className="container container-contact">
-            <p> Estamos trabajando en Contact</p>
+
+    return (
+        <div className="row row-contact">
+            <div className="col-lg-6 d-flex flex-column justify-content-center align-items-center col-contact-card">
+                <div className="contact-form">
+                    <h2 className="mb-4 fw-bold">
+                        Contáctanos
+                    </h2>
+                    <form >
+                        <div className="mb-3">
+                            <label className="form-label">Nombres y Apellidos</label>
+                            <input name="fullName" type="text" className="form-control" required />
+                        </div>
+                        <div className="mb-3">
+                            <label className="form-label">Correo Electrónico</label>
+                            <input name="email" type="email" className="form-control" required />
+                        </div>
+                        <div className="mb-3">
+                            <label className="form-label">Whatsapp</label>
+                            <PhoneInput name="phone" international defaultCountry="PE" placeholder="987 654 321" />
+                        </div>
+                        <div className="mb-3">
+                            <label className="form-label"> Motivo de contacto </label>
+                            <select name="subject" className="form-select">
+                                <option value=""> Seleccione una opción </option>
+                                <option> Servicio de administración </option>
+                                <option> Plataforma Real 360 </option>
+                                <option> Evaluar solución para mi edificio </option>
+                                <option> Otro </option>
+                            </select>
+                        </div>
+                        <div className="mb-3">
+                            {/*<label className="form-label">Mensaje</label>*/}
+                            <textarea name="message" className="form-control" placeholder="Escribe tu mensaje aquí" style={{ height: "100px" }} ></textarea>
+                        </div>
+                        <div className="form-check mb-4">
+                            <input className="form-check-input" type="checkbox" id="acceptPrivacy" />
+                            <label className="form-check-label" htmlFor="acceptPrivacy" > Acepto el tratamiento de mis datos personales. </label>
+                        </div>
+                        <button type="submit" className="btn btn-primary" > Enviar </button>
+                    </form>
+                </div>
+            </div>
+            <div className="col-lg-6 d-none d-lg-flex flex-column col-contact-img" >
+
+            </div>
         </div>
-    )
-}
+    );
+};
