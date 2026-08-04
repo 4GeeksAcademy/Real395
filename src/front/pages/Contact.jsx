@@ -27,9 +27,10 @@ export const Contact = () => {
                             <label className="form-label"> Motivo de contacto </label>
                             <select name="subject" className="form-select">
                                 <option value=""> Seleccione una opción </option>
-                                <option> Servicio de administración </option>
-                                <option> Plataforma Real 360 </option>
-                                <option> Evaluar solución para mi edificio </option>
+                                <option> Deseo contratar el servicio de administración </option>
+                                <option> Deseo adquirir la Plataforma Real 360 </option>
+                                <option> Deseo evalúen una solución para mi edificio </option>
+                                <option> Deseo mayor información </option>
                                 <option> Otro </option>
                             </select>
                         </div>

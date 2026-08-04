@@ -1,10 +1,13 @@
-import { Link } from "react-router-dom";
-import React from "react";
+import { AboutIntro } from "../components/AboutIntro"
+import { AboutPurpose } from "../components/AboutPurpose";
+import "../css/About.css";
 
 export const About = () => {
-    return ( 
-        <div className="container container-about">
-            <p> Estamos trabajando About</p>
-        </div>
+
+    return (
+        <main className="about-page">
+            <AboutIntro />
+            <AboutPurpose />
+        </main>
     )
 }

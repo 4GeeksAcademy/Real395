@@ -1,0 +1,54 @@
+/* SECCION DE INTRO */
+
+.aboutintro {
+  display: flex;
+  /*height: 40vh;*/
+  min-height: 40vh;
+  align-items: center;/*agregado recien, estoy probando*/
+  background-color: white;
+  /*margin: 0;
+  padding: 0;*/
+}
+
+.aboutintro-content {
+  padding: 2rem;
+}
+
+.aboutintro-image img {
+  /*width: 100%;*/
+  width: 100%;
+  max-width: 1000px;/*agregado recien, estoy probando*/
+  object-fit: contain;
+}
+
+.aboutintro-title {
+    margin-top: 1rem;
+}
+
+.aboutintro-description {
+  text-align: justify;
+}
+
+@media (max-width: 992px) {
+  .aboutintro {
+    flex-direction: column-reverse;
+    /*height: auto;
+    margin: 0;
+  padding: 0;*/
+  }
+
+  .aboutintro-image img {
+    /*width: 100%;*/
+    max-width: 100%; /*agregado recien, estoy probando*/
+    height: auto;
+    /*object-fit: contain;*/
+  }
+}
+
+/* SECCION DE MISION, VISION Y VALORES */
+
+.aboutpurpose {
+  padding-top: 1rem;
+  padding-bottom: 7rem;
+  background-color: white;
+}

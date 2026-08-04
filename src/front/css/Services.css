@@ -1,7 +1,8 @@
 /* SECCION DE SERVICES INTRO */
 .intro {
-    background-color: #E3EDFD;
-    /*
+    background-color: white;
+    /*background-color: #E3EDFD;
+    
     display: flex;
     margin: 0;
     padding: 0;*/
@@ -9,7 +10,7 @@
 
 .intro-content {
     width: 100%;
-    padding: 3rem;
+    padding: 1rem;
 }
 
 .intro-title {
