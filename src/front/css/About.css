@@ -1,28 +1,44 @@
 /* SECCION DE INTRO */
 
+.about-page {
+  background: white;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutintro,
+.aboutpurpose {
+  flex: 1;
+}
+
 .aboutintro {
   display: flex;
-  /*height: 40vh;*/
-  min-height: 40vh;
-  align-items: center;/*agregado recien, estoy probando*/
-  background-color: white;
-  /*margin: 0;
-  padding: 0;*/
+  flex: 1;
+  align-items: center;
+  padding-left: 3rem;
+  padding-right: 2rem;
+}
+
+.aboutintro-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .aboutintro-content {
-  padding: 2rem;
+  padding-right: 3rem;
 }
 
 .aboutintro-image img {
   /*width: 100%;*/
   width: 100%;
-  max-width: 1000px;/*agregado recien, estoy probando*/
+  max-width: 600px; /*agregado recien, estoy probando*/
   object-fit: contain;
 }
 
 .aboutintro-title {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .aboutintro-description {
@@ -48,7 +64,57 @@
 /* SECCION DE MISION, VISION Y VALORES */
 
 .aboutpurpose {
-  padding-top: 1rem;
-  padding-bottom: 7rem;
-  background-color: white;
+  /*padding-top: 1rem;
+  padding-bottom: 7rem;*/
+  padding-left: 3rem;
+  padding-right: 2rem;
+}
+
+.aboutpurpose-icon {
+  width: 85px;
+  height: 85px;
+  margin: 0 auto 1.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  background-color: #eef4ff;
+}
+
+.aboutpurpose-icon i {
+  font-size: 2rem;
+  color: #1e63e9;
+}
+
+.aboutpurpose .card-text {
+  text-align: center;
+  line-height: 1.7;
+}
+
+.aboutpurpose .card-title {
+  text-align: center;
+}
+
+.aboutpurpose-values {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.aboutpurpose-values span {
+  padding: 8px 16px;
+
+  border-radius: 30px;
+
+  background: #e8f1ff;
+
+  color: #2563eb;
+
+  font-size: 0.9rem;
+
+  font-weight: 500;
 }
