@@ -1,10 +1,8 @@
 import React, { useEffect } from "react"
 import useGlobalReducer from "../hooks/useGlobalReducer.jsx";
-import { Jumbotron } from "../components/Jumbotron.jsx";
 import { ServicesHero } from "../components/ServicesHero.jsx";
 import { useNavigate } from "react-router-dom";
 
-import imageHome1 from "../assets/img/sistema-real360.png";
 import serviceHero1 from "../assets/img/b1-gestion-eficiente.png";
 import serviceHero2 from "../assets/img/contratacion-personal-1.png";
 import serviceHero3 from "../assets/img/b3-cuidamos-tu-propiedad.png";
@@ -50,14 +48,6 @@ export const Home = () => {
 
 	return (
 		<>
-			<Jumbotron
-				title="Tecnología que simplifica la administración"
-				subtitle = "Tecnología para administrar edificios"
-				description = "Software diseñado para administradores y residentes que automatiza la gestión diaria del edificio, centraliza la información y reduce errores brindando mayor visibilidad y control sobre cada proceso."
-				image={imageHome1}
-				buttonText="Solicita tu demo"
-				buttonLink="/contact"
-			/>
 			<ServicesHero cards={servicesCards} />
 		</>
 	)

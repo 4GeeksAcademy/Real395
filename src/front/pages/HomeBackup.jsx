@@ -5,11 +5,12 @@ import { ServicesHero } from "../components/ServicesHero.jsx";
 import { useNavigate } from "react-router-dom";
 
 import imageHome1 from "../assets/img/sistema-real360.png";
-import imageHome2 from "../assets/img/img-services-1.png";
 import serviceHero1 from "../assets/img/b1-gestion-eficiente.png";
 import serviceHero2 from "../assets/img/contratacion-personal-1.png";
 import serviceHero3 from "../assets/img/b3-cuidamos-tu-propiedad.png";
 import serviceHero4 from "../assets/img/b4-comunicacion-constante.jpg";
+import "../css/Home.css"
+
 
 export const Home = () => {
 
