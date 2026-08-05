@@ -6,9 +6,11 @@ import "../css/Services.css";
 export const Services = () => {
 
     return (
-        <>
+        <main className="services-page">
+
             <ServicesIntro />
             <ServicesCarousel />
-        </>
+
+        </main>
     )
 }

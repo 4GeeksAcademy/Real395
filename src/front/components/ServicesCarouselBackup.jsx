@@ -1,4 +1,9 @@
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/navigation";
 import service1 from "../assets/img/b1-gestion-eficiente.png";
 import service2 from "../assets/img/contratacion-personal-1.png";
 import service3 from "../assets/img/b3-cuidamos-tu-propiedad.png";
@@ -43,11 +48,11 @@ export const ServicesCarousel = () => {
     ];
     return (
         <div className="Container services-carousel">
-            <div className="row g-5 services-carousel-row">
+            <div className="row g-5 p-3 services-carousel-row">
                 {
                     cardImages.map((img, index) => (
 
-                        <div key={index} className="col-lg-4 col-md-12 col-12 service-card-item" >
+                        <div key={index} className="col-lg-6 col-md-12 col-12 service-card-item" >
                             <CardDetail
                                 url={img.url}
                                 title={img.title}
