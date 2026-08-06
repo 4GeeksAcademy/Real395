@@ -15,19 +15,19 @@ export const Contact = () => {
                         Contáctanos
                     </h2>
                     <form >
-                        <div className="row mb-3">
-                            <div className="col-md-6">
-                                <label className="form-label">Nombres y Apellidos</label>
-                                <input name="fullName" type="text" className="form-control" required />
-                            </div>
-                            <div className="col-md-6">
-                                <label className="form-label">Correo Electrónico</label>
-                                <input name="email" type="email" className="form-control" required />
-                            </div>
-                        </div>
                         <div className="mb-3">
-                            <label className="form-label">Whatsapp</label>
-                            <PhoneInput name="phone" international defaultCountry="PE" placeholder="987 654 321" />
+                            <label className="form-label">Nombres y Apellidos</label>
+                            <input name="fullName" type="text" className="form-control" required />
+                        </div>
+                        <div className="row mb-3">
+                            <div className="col-md-7">
+                                <label className="form-label">Whatsapp</label>
+                                <PhoneInput name="phone" international defaultCountry="PE" placeholder="987 654 321" />
+                            </div>
+                            <div className="col-md-5">
+                                <label className="form-label">Correo</label>
+                                <input name="email" type="email"  className="form-control email-input"  required />
+                            </div>
                         </div>
                         <div className="mb-3">
                             <label className="form-label"> Motivo de contacto </label>
