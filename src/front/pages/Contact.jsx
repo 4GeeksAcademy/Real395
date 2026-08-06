@@ -1,23 +1,29 @@
 import PhoneInput from "react-phone-number-input";
 import "../css/Contact.css"
 
+/*import contactBackground from "../assets/img/contact-background.png";*/
+import contactImg from "../assets/img/contact-img-4.png";
+
+
 export const Contact = () => {
 
     return (
-        <div className="row row-contact">
+        <div className="row row-contact" >
             <div className="col-lg-6 d-flex flex-column justify-content-center align-items-center col-contact-card">
                 <div className="contact-form">
                     <h2 className="mb-4 fw-bold">
                         Contáctanos
                     </h2>
                     <form >
-                        <div className="mb-3">
-                            <label className="form-label">Nombres y Apellidos</label>
-                            <input name="fullName" type="text" className="form-control" required />
-                        </div>
-                        <div className="mb-3">
-                            <label className="form-label">Correo Electrónico</label>
-                            <input name="email" type="email" className="form-control" required />
+                        <div className="row mb-3">
+                            <div className="col-md-6">
+                                <label className="form-label">Nombres y Apellidos</label>
+                                <input name="fullName" type="text" className="form-control" required />
+                            </div>
+                            <div className="col-md-6">
+                                <label className="form-label">Correo Electrónico</label>
+                                <input name="email" type="email" className="form-control" required />
+                            </div>
                         </div>
                         <div className="mb-3">
                             <label className="form-label">Whatsapp</label>
@@ -46,7 +52,7 @@ export const Contact = () => {
                     </form>
                 </div>
             </div>
-            <div className="col-lg-6 d-none d-lg-flex flex-column col-contact-img" >
+            <div className="col-lg-6 d-none d-lg-flex flex-column col-contact-img" style={{ backgroundImage: `url(${contactImg})` }}  >
 
             </div>
         </div>

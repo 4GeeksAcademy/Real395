@@ -3,11 +3,6 @@ body {
   background-color: whitesmoke;
 }
 
-body {
-  margin: 0;
-  background-color: whitesmoke;
-}
-
 .layout-public {
   min-height: 100vh;
   display: flex;
