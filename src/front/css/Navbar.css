@@ -1,12 +1,12 @@
 .navbar {
   min-height: 8vh;
-  background-color: white;
+  background-color: var(--color-background);
   font-family: "Poppins", sans-serif;
   color: #021138;
   margin: 0;
   padding: 0;
   /*agregado borde y sombra*/
-  border-bottom: 1px solid #e9edf3;
+  border-bottom: 1px solid var(--color-border);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
 }
 
@@ -27,7 +27,7 @@
 
 @media (max-width: 992px) {
   .navbar-collapse {
-    background: white;
+    background: var(--color-background);
     padding: 20px;
     border-top: 1px solid #eee;
   }
@@ -52,9 +52,10 @@
 
 .btn-login {
   display: inline-flex;
-  background-color: white;
-  color: #0d6efd;
-  border: 1px solid #0d6efd;
+
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
 
   align-items: center;
   justify-content: center;
@@ -62,7 +63,7 @@
 }
 
 .btn-login:hover {
-  background-color: #0d6efd;
-  color: white;
-  border-color: #0d6efd;
+  background-color: var(--color-primary);
+  color: var(--color-background);
+  border-color: var(--color-primary);
 }

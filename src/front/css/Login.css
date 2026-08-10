@@ -9,57 +9,57 @@
 .col-login-img {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position:bottom;
+  background-position: bottom;
 }
 
-.col-login-card{
-    background: #ffffff;
+.col-login-card {
+  background: var(--color-background);
 }
 
-.login-form{
-    width: 100%;
-    max-width: 350px;
-    padding: 40px;
+.login-form {
+  width: 100%;
+  max-width: 350px;
+  padding: 40px;
 }
 
-.login-form h2{
-    color: #0d6efd;
-    font-weight: 700;
+.login-form h2 {
+  color: var(--color-primary);
+  font-weight: 700;
 }
 
-.small-links a{
-    font-size: 0.85rem;
-    text-decoration: none;
-    color: #6c757d;
-    transition: 0.2s ease;
+.small-links a {
+  font-size: 0.85rem;
+  text-decoration: none;
+  color: var(--color-text-secondary);
+  transition: 0.2s ease;
 }
 
-.small-links a:hover{
-    color: #0d6efd;
-    text-decoration: underline;
+.small-links a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
 }
 
-.col-login-img{
-    position: relative;
-    background-size: cover;
-    background-position: center;
+.col-login-img {
+  position: relative;
+  background-size: cover;
+  background-position: center;
 }
 
-.login-overlay-text{
-    color: #0b2a4a; 
-    max-width: 380px;
-    padding: 60px 50px;
+.login-overlay-text {
+  color: var(--color-primary-dark);
+  max-width: 380px;
+  padding: 60px 50px;
 }
 
-.login-title{
-    font-size: 2.2rem;
-    font-weight: 700;
-    margin-bottom: 12px;
-    letter-spacing: 0.5px;
+.login-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
 }
 
-.login-description{
-    font-size: 0.95rem;
-    line-height: 1.6;
-    opacity: 0.85;
+.login-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.85;
 }

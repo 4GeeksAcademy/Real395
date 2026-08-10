@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
   display: flex;
-  background: white;
+  background: var(--color-background);
 }
 
 .col-contact-card {
@@ -16,14 +16,14 @@
   max-width: 550px;
   margin: 20px 0;
   padding: 40px 40px 20px 40px;
-  border: 1px solid #e9edf3;
+  border: 1px solid var(--color-border);
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
 }
 
 .contact-form h2 {
   font-weight: 700;
-  color: #0d6efd;
+  color: var(--color-primary);
 }
 
 .email-input {
@@ -39,7 +39,7 @@
 }
 
 .contact-overlay-text {
-  color: #0b2a4a;
+  color: var(--color-primary-dark);
   max-width: 380px;
   padding: 60px 50px;
 }
@@ -76,7 +76,7 @@
   border: 1px solid #ced4da;
   border-radius: 0.375rem;
   padding: 0 0 0 5px;
-  background: #fff;
+  background: var(--color-background);
 }
 
 /* BANDERA */
@@ -142,7 +142,7 @@
 /*ACEPTO TRATAMIENTO*/
 .form-check-label {
   font-size: 0.88rem;
-  color: #6c757d;
+  color: var(--color-text-secondary);
   line-height: 1.4;
   cursor: pointer;
 }
