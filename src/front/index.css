@@ -1,3 +1,18 @@
+:root {
+  /* Colores */
+  --color-primary: #0d6efd;
+  --color-primary-dark: #0b2a4a;
+  --color-primary-light: #eef4ff;
+
+  --color-text: #212529;
+  --color-text-secondary: #6c757d;
+
+  --color-background: #ffffff;
+  --color-background-soft: #e3edfd;
+
+  --color-border: #e9edf3;
+}
+
 body {
   margin: 0;
   background-color: whitesmoke;
