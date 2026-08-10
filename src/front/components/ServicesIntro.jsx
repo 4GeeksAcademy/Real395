@@ -11,7 +11,7 @@ export const ServicesIntro = () => {
                         Administración de Edificios
                     </h2>
                     <NavLink to="/contact" className="btn btn-primary" >
-                        Solicita tu servicio
+                        Solicitar administración
                     </NavLink>
                 </div>
 

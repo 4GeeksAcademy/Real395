@@ -6,7 +6,6 @@ import {
   Navigate,
 } from "react-router-dom";
 
-/*import { Layout } from "./pages/Layout";*/
 import { PublicLayout } from "./pages/PublicLayout";
 import { PrivateLayout } from "./pages/PrivateLayout";
 
