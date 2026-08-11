@@ -7,7 +7,7 @@ import loginFondo from "../assets/img/login-fondo-3.png";
 import "../css/Login.css"
 
 export const Login = () => {
-    const { store, dispatch } = useGlobalReducer()
+    const { dispatch } = useGlobalReducer()
     const navigate = useNavigate();
 
     const [user, setUser] = useState({
@@ -34,8 +34,8 @@ export const Login = () => {
 
         if (response.ok) {
             dispatch({
-            type: "set_user",
-            payload: data.user,
+                type: "set_user",
+                payload: data.user,
             });
 
             localStorage.setItem("user", JSON.stringify(data.user));

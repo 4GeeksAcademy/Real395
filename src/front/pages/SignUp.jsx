@@ -7,7 +7,7 @@ import loginFondo from "../assets/img/inicio-sesion.png";
 import "../css/SignUp.css"
 
 export const SignUp = () => {
-    const { store, dispatch } = useGlobalReducer()
+    const { dispatch } = useGlobalReducer()
     const navigate = useNavigate();
 
     const [user, setUser] = useState({
