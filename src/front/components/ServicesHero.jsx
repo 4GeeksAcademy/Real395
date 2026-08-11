@@ -12,7 +12,7 @@ export const ServicesHero = ({ cards }) => {
                         Administración <span className="hero-title-highlight">que genera valor</span>
                     </h2>
                     <div className="hero-blueline"></div>
-                    <p className="hero-description"> Nos encargamos de la administración de tu edificio para que tú te enfoques en lo que realmente importa: <span className="hero-description-highlight">tu comunidad y tu bienestar.</span>  </p>   
+                    <p className="hero-description"> Nos encargamos de la administración de tu edificio para que tú te enfoques en lo que realmente importa: <span className="hero-description-highlight">tu comunidad y tu bienestar.</span>  </p>
                 </div>
                 <div className="col-lg-6">
                     <div className="row hero-benefits">
@@ -55,24 +55,18 @@ export const ServicesHero = ({ cards }) => {
                 cards.map((img, index) => {
                     return (
                         <div className="col-lg-3 col-md-6 col-12">
-                            <Card key={index} url={img.url} title={img.title} subtitle={img.subtitle} buttonText={img.buttonText} buttonLink={img.buttonLink}  />
+                            <Card key={index} url={img.url} title={img.title} subtitle={img.subtitle} buttonText={img.buttonText} buttonLink={img.buttonLink} />
                         </div>
                     );
                 })}
             </div>
             <div className="row g-4 p-3">
                 <div className="col-12 text-center d-flex justify-content-center gap-3">
-                    <NavLink to="/services">
-                        <button className="btn btn-primary">
-                            Explorar servicios
-                        {/*    <i className="fa-solid fa-arrow-right ms-2"></i>*/}
-                        </button>
+                    <NavLink to="/services" className="btn btn-primary">
+                        Explorar servicios
                     </NavLink>
-                    <NavLink to="/contact">
-                        <button className="btn btn-primary">
+                    <NavLink to="/contact" className="btn btn-primary">
                         Solicitar cotización
-                        {/*    <i className="fa-solid fa-arrow-right ms-2"></i>*/}
-                        </button>
                     </NavLink>
                 </div>
             </div>

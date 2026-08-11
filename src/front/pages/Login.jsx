@@ -61,9 +61,10 @@ export const Login = () => {
                             <input type="password" className="form-control" value={user.password} onChange={(e) => setUser({ ...user, password: e.target.value })} />
                         </div>
                         <div className="d-flex justify-content-between align-items-center mt-3 mb-4 small-links">
-                            <Link to="/forgot-password" className="forgot-password-link">
+                            {/* TODO: Implementar recuperación de contraseña */}
+                            {/*<Link to="/forgot-password" className="forgot-password-link">
                                 ¿Olvidaste tu contraseña?
-                            </Link>
+                            </Link>*/}
                             <Link to="/signup" className="forgot-password-link">
                                 Regístrate
                             </Link>

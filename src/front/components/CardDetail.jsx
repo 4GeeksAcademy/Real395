@@ -10,11 +10,11 @@ export const CardDetail = (props) => {
                     <h5 className="card-title">{props.title}</h5>
                     <p className="card-description">{props.description}</p>
                 </div>
-                <ul class="list-group list-group-flush activity-list">
-                    <li class="list-group-item">{props.activity1}</li>
-                    <li class="list-group-item">{props.activity2}</li>
-                    <li class="list-group-item">{props.activity3}</li>
-                    <li class="list-group-item">{props.activity4}</li>
+                <ul className="list-group list-group-flush activity-list">
+                    <li className="list-group-item">{props.activity1}</li>
+                    <li className="list-group-item">{props.activity2}</li>
+                    <li className="list-group-item">{props.activity3}</li>
+                    <li className="list-group-item">{props.activity4}</li>
                 </ul>
             </div>
             {/*<Link to="/contact" className="btn btn-primary"> Cotiza Ahora </Link>*/}

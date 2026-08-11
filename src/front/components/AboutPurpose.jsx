@@ -31,7 +31,6 @@ export const AboutPurpose = () => {
             <div className="card-body">
               <div className="aboutpurpose-icon">
                 <i className="fa-solid fa-eye"></i>
-                {/*<i class="fa-regular fa-eye"></i>*/}
               </div>
               <h5 className="card-title">Nuestra Visión</h5>
               <p className="card-text ">
@@ -49,7 +48,6 @@ export const AboutPurpose = () => {
             <div className="card-body">
               <div className="aboutpurpose-icon">
                 <i className="fa-solid fa-gem"></i>
-                {/*<i class="fa-regular fa-gem"></i>*/}
               </div>
               <h5 className="card-title">Nuestra Valores</h5>
               <div className="aboutpurpose-values">
