@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import logo from "../assets/img/logo-real360.png";
+import logo from "../assets/img/logo.png";
 
 
 export const Navbar = () => {
